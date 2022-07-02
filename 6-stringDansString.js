@@ -1,7 +1,7 @@
 var myArgs = process.argv.slice(2);
 var premierMot;
 var deuxiemeMot;
-if (!(myArgs.length == 2) || isNumeric(myArgs[0]) || isNumeric(myArgs[1]) || myArgs[0].length < myArgs[1].length) { Error(); }
+if ((myArgs.length != 2) || isNumeric(myArgs[0]) || isNumeric(myArgs[1]) || myArgs[0].length < myArgs[1].length) { Error(); }
 premierMot = myArgs[0].split('');
 deuxiemeMot = myArgs[1].split('');
 for (let index = 0; index < premierMot.length; index++) {
